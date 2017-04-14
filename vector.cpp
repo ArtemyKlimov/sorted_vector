@@ -37,7 +37,7 @@ sorted_vector<T, U>::sorted_vector(const T& new_key, const U& new_value)
 {
 	array_capacity = 2;
 	current_size = 1;
-	dynamic_array(new T[sizeof(T) * array_capacity]);
+	dynamic_array(new node<T,U>[array_capacity]);
 	dynamic_array.key = new_key;
 	dynamic_array.value =new_value;
 }
